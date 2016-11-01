@@ -36,7 +36,7 @@ div, p {
 		}
 			li a {
 				text-decoration: none;
-				font-size: 1.8em;
+				font-size: 1.2em;
 				color: #CCCCCC;
 				font-family: 'Roboto', sans-serif;
 				font-weight: 300;
@@ -54,14 +54,14 @@ div, p {
 		    transition: font-size .3s ease-in;
 			}
 		  .active {
-	   	font-size: 2em;
+	   	font-size: 1.35em;
 			color: #FFFFFF;
 		}
 		.navItems li a:hover {
 			font-size: 2em;
 		}
 .content {
-	margin-left: 250px;
+	margin-left: 350px;
 	margin-right: 100px;
 }
 	#intro {
@@ -71,24 +71,21 @@ div, p {
 			padding-top: 100px;
 		}
 		#intro span {
-			font-size: 2.2em;
+			font-size: 1.8em;
 			line-height: 60px;
-			font-family: 'Itim', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
 			color: #EEEEEE;
 		}
 		#intro p {
-			margin-top: 200px;
-			font-size: 2.2em;
-			line-height: 60px;
-			font-family: 'Itim', cursive;
-			color: #EEEEEE;
 			display: none;
 		}
 		#portfolio p {
 			padding-top: 200px;
 			font-size: 2.2em;
 			line-height: 60px;
-			font-family: 'Itim', cursive;
+			font-family: 'Roboto', sans-serif;
+      font-weight: 300;
 			color: #EEEEEE;
 		}
 			.portfolio-entry1, .portfolio-entry2, .portfolio-entry3 {
