@@ -8,6 +8,9 @@ ul,li { list-style-type: none;
         padding: 0;
 				margin: 0;
 }
+p {
+  text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.75);
+}
 div, p {
 	margin:0;
   padding:0; 
@@ -24,9 +27,11 @@ div, p {
 		list-style-type: none;
 		position: absolute;
 		align-self: center;
-		padding-right: 20px;
 	}
-		li {
+  .navItems {
+    opacity: 0;
+  }
+  	li {
 			margin: 0 0 30px 0;
 		}
 			li a {
@@ -69,14 +74,14 @@ div, p {
 			font-size: 2.2em;
 			line-height: 60px;
 			font-family: 'Itim', cursive;
-			color: white;
+			color: #EEEEEE;
 		}
 		#intro p {
 			margin-top: 200px;
 			font-size: 2.2em;
 			line-height: 60px;
 			font-family: 'Itim', cursive;
-			color: white;
+			color: #EEEEEE;
 			display: none;
 		}
 		#portfolio p {
@@ -84,7 +89,7 @@ div, p {
 			font-size: 2.2em;
 			line-height: 60px;
 			font-family: 'Itim', cursive;
-			color: white;
+			color: #EEEEEE;
 		}
 			.portfolio-entry1, .portfolio-entry2, .portfolio-entry3 {
 				padding-top: 200px;
@@ -97,5 +102,5 @@ div, p {
 				font-size: 2.2em;
 				line-height: 60px;
 				font-family: 'Itim', cursive;
-				color: white;
+				color: #EEEEEE;
 		}

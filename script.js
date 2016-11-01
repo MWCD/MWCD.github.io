@@ -34,8 +34,13 @@ $(document).ready(function () {
     //http://stackoverflow.com/questions/11761563/javascript-regexp-for-splitting-text-into-sentences-and-keeping-the-delimiter
     var spans = '<span>' + str.match( /[^\.!\?]+[\.!\?]+/g ).join(' </span><span>') + '</span>';
     $(spans).hide().appendTo('#intro').each(function(i) {
-        $(this).delay(3000 * i).fadeIn();
+        if (i == 1) {
+            $(this).delay(1700 * i).fadeIn();
+        } else {
+            $(this).delay(3000 * i).fadeIn();
+        }
     });
+    $(".navItems").delay(1000).animate({opacity: 1}, 3000);
 });
 
 function onScroll(event){
