@@ -1,0 +1,54 @@
+https://stanhub.com/sticky-header-change-navigation-active-class-on-page-scroll-with-jquery/
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash;
+        $target = $(target);
+        console.log(target);
+        if(target == "#intro") {
+            $('html, body').stop().animate({
+                'scrollTop': 0
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        } else {
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+100
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        }
+    });
+    var str = $('#intro p').text();
+    //http://stackoverflow.com/questions/11761563/javascript-regexp-for-splitting-text-into-sentences-and-keeping-the-delimiter
+    var spans = '<span>' + str.match( /[^\.!\?]+[\.!\?]+/g ).join(' </span><span>') + '</span>';
+    $(spans).hide().appendTo('#intro').each(function(i) {
+        $(this).delay(3000 * i).fadeIn();
+    });
+});
+
+function onScroll(event){
+    var scrollPosition = $(document).scrollTop();
+    $('nav a').each(function () {
+        var currentLink = $(this);
+        var refElement = $(currentLink.attr("href"));
+        if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+            $('nav ul li a').removeClass("active");
+            currentLink.addClass("active");
+        }
+        else{
+            currentLink.removeClass("active");
+        }
+    });
+}
