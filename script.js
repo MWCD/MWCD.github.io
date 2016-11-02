@@ -23,7 +23,7 @@ $(document).ready(function () {
             });
         } else {
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top+100
+                'scrollTop': $target.offset().top
             }, 500, 'swing', function () {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
@@ -37,8 +37,7 @@ $(document).ready(function () {
         $(this).delay(2000 * i).fadeIn(1000);
     });
     $(".navItems").animate({opacity: 1}, 3000);
-    $(".imgButton").delay(2000).animate({opacity: 1}, 3000);
-
+    $(".fadeInButton").delay(2000).animate({opacity: 1}, 3000);   
 });
 
 function onScroll(event){
@@ -54,4 +53,21 @@ function onScroll(event){
             currentLink.removeClass("active");
         }
     });
+}
+
+function swap1() {
+    $("#entry2").fadeOut(500);
+    $("#entry3").fadeOut(500);
+    $("#entry1").delay(500).fadeIn(500);
+}
+
+function swap2() {
+    $("#entry1").fadeOut(500);
+    $("#entry3").fadeOut(500);
+    $("#entry2").delay(500).fadeIn(500);
+}
+function swap3() {
+    $("#entry1").fadeOut(500);
+    $("#entry2").fadeOut(500);
+    $("#entry3").delay(500).fadeIn(500);
 }
