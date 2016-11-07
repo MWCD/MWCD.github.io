@@ -13,7 +13,6 @@ $(document).ready(function () {
 
         var target = this.hash;
         $target = $(target);
-        console.log(target);
         if(target == "#intro") {
             $('html, body').stop().animate({
                 'scrollTop': 0
