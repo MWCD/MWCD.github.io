@@ -327,7 +327,17 @@ margin-left: 20%;
   	margin-left: 6%;
   }
   .contactInfo {
-		padding-top: 0px;
+		padding-top: 0;
+	}
+	.myPhoto {
+		width: 60%;
+		padding-bottom: 20px;
+	}
+	.contactInfo {
+		width: 100%;
+	}
+	.contactInfo ul {
+		padding-left: 0;
 	}
   .contactInfo li {
 		font-size: 1.1em;
