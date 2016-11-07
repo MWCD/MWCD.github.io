@@ -58,16 +58,16 @@ function onScroll(event){
 function swap1() {
     $("#entry2").fadeOut(500);
     $("#entry3").fadeOut(500);
-    $("#entry1").delay(500).fadeIn(500);
+    $("#entry1").delay(400).fadeIn(500);
 }
 
 function swap2() {
     $("#entry1").fadeOut(500);
     $("#entry3").fadeOut(500);
-    $("#entry2").delay(500).fadeIn(500);
+    $("#entry2").delay(400).fadeIn(500);
 }
 function swap3() {
     $("#entry1").fadeOut(500);
     $("#entry2").fadeOut(500);
-    $("#entry3").delay(500).fadeIn(500);
+    $("#entry3").delay(400).fadeIn(500);
 }

@@ -131,7 +131,7 @@ margin-left: 20%;
   	margin-right: 6%;
   }
   .portfolio-entry p {
-  	font-size: 1.1em;
+  	font-size: 1em;
   	padding-bottom: 20px;
   }
   .leftArrow, .rightArrow {
@@ -143,15 +143,24 @@ margin-left: 20%;
   .arrowLeftButton:focus, .arrowRightButton:focus {
   	outline: 0;
   }
+  .contentContainer {
+  	width: 90%;
+  	float: left;
+  }
   .imgContainer {
   	float: left;
-  	width: 45%;
+  	width: 50%;
+  	overflow: hidden;
   }
   .portfolioImg {
   	width: 95%;
   	padding-bottom: 20px;
   	display:block;
     margin:auto;
+  }
+  .contextContainer {
+  	width: 50%;
+  	float: left;
   }
   .portfolioBtn {
   	margin:0 auto;
@@ -176,6 +185,11 @@ margin-left: 20%;
     -ms-transition:     background .2s;
     -o-transition:      background .2s;
     transition:         background .2s;
+  }
+  .playBtn {
+  	margin:0 auto;
+	  display:block;
+	  width: 300px;
   }
   .portfolioBtn:hover {
   	background: #CCCCCC;
