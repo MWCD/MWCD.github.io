@@ -18,10 +18,10 @@ div, p {
 h1, h2, h3, span.appearText {
 	margin: 0;
 	padding: 0;
-  -webkit-padding-before: 0.67em;
-  -webkit-padding-after: 0.67em;
-  -webkit-padding-start: 0px;
-  -webkit-padding-end: 0px;
+  padding-top: 0.67em;
+  padding-bottom: 0.67em;
+  padding-left: 0px;
+  padding-right: 0px;
   font-size: 1.8em;
   line-height: 60px;
   font-family: 'Roboto', sans-serif;
@@ -60,7 +60,6 @@ a {
 }
 	nav {
 		list-style-type: none;
-		position: absolute;
 		align-self: center;
 	}
   .navItems {
@@ -82,7 +81,7 @@ a {
 		    -ms-transition: font-size .3s ease-in;
 		    transition: font-size .3s ease-in;
 			}
-		  .active {
+		.active {
 	   	font-size: 1.35em;
 			color: #FFFFFF;
 		}
@@ -95,7 +94,7 @@ float: left;
 margin-left: 20%;
 }
 	#intro {
-		height: 700px;
+		height: 600px;
 	}
 		.spacing {
 			padding-top: 200px;
@@ -126,8 +125,10 @@ margin-left: 20%;
       font-size: 1.1em;
       color: #FFFFFF;
     }
+  #portfolio {
+  	margin-top: 100px;
+  }
   #portfolio h1, #portfolio h3, .portfolio-entry p{
-  	margin-left: 6%;
   	margin-right: 6%;
   }
   .portfolio-entry p {
@@ -154,12 +155,12 @@ margin-left: 20%;
   }
   .portfolioImg {
   	width: 95%;
-  	padding-bottom: 20px;
+  	padding: 10px 20px 10px 0;
   	display:block;
     margin:auto;
   }
   .contextContainer {
-  	width: 50%;
+  	width: 100%;
   	float: left;
   }
   .portfolioBtn {
@@ -201,7 +202,7 @@ margin-left: 20%;
   	display: none;
   }
 	#contact {
-		padding-top: 100px;
+		margin-top: 100px;
 		height: 500px;
 		padding-bottom: 200px;
 		margin-right: 6%;
@@ -251,5 +252,97 @@ margin-left: 20%;
 	   background-image: url(img/mail.svg);
 	}
 
-
+@media (max-width: 970px) {
+	a {
+		font-size: 1em;
+	}
+	.active {
+   	font-size: 1.15em;
+	}
+	.navItems li a:hover {
+			font-size: 1.15em;
+	}
+	h1, h2, h3, span.appearText {
+	  padding-top: 0.67em;
+	  padding-bottom: 0.67em;
+	  font-size: 1.4em;
+	  line-height: 50px;
+	}
+	h1 {
+		font-size: 2.1em;
+		border-bottom: solid;
+		border-width: .5px;
+		width: 225px;
+	}
+	.contactInfo {
+		padding-top: 50px;
+	}
+	.contactInfo li {
+		font-size: 1.4em;
+	}
+	.address:before{
+	   height: 35px;
+	   width: 35px;
+	   margin-right: 20px;
+	   margin-bottom: -10px;
+	}
+	.email:before{
+	   height: 35px;
+	   width: 35px;
+	   margin-right: 20px;
+	   margin-bottom: -13px;
+	}
+}
+@media (max-width: 870px) {
+	.imgContainer {
+  	width: 100%;
+  }
+  .contactInfo {
+		padding-top: 40px;
+	}
+	.address:before{
+	   height: 35px;
+	   width: 35px;
+	}
+	.email:before{
+	   height: 35px;
+	   width: 35px;
+	}
+}
+@media (max-width: 650px) {
+	h1, h2, h3 {
+		margin-left: 6%;
+	}
+	.navCol {
+		display: none;
+	}
+	.content {
+		width: 100%;
+		margin-left: 0;
+	}
+	.fadeInText {
+    margin-left: 6%;
+  }
+  .contactContent {
+  	margin-left: 6%;
+  }
+  .contactInfo {
+		padding-top: 0px;
+	}
+  .contactInfo li {
+		font-size: 1.1em;
+	}
+	.address:before{
+		height: 25px;
+		width: 25px;
+		margin-right: 20px;
+		margin-bottom: -5px;
+	}
+	.email:before{
+		height: 25px;
+		width: 25px;
+		margin-right: 20px;
+		margin-bottom: -7px;
+	}
+}
 
