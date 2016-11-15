@@ -128,12 +128,15 @@ margin-left: 20%;
   #portfolio {
   	margin-top: 100px;
   }
-  #portfolio h1, #portfolio h3, .portfolio-entry p{
+  #portfolio h1, #portfolio h3 {
   	margin-right: 6%;
   }
   .portfolio-entry p {
   	font-size: 1em;
   	padding-bottom: 20px;
+  }
+  .lessMargin {
+  	margin-right: 2%;
   }
   .leftArrow, .rightArrow {
   	float: left;
@@ -310,8 +313,8 @@ margin-left: 20%;
 	}
 }
 @media only screen and (max-width: 650px) {
-	body {
-		background-color: blue;
+	.spacing {
+		padding-top: 70px;
 	}
 	h1, h2, h3 {
 		margin-left: 6%;
@@ -325,6 +328,10 @@ margin-left: 20%;
 	}
 	.fadeInText {
     margin-left: 6%;
+    margin-bottom: 50px;
+  }
+  .portfolioImg {
+  	padding: 10px 0 10px 0;
   }
   .contactContent {
   	margin-left: 6%;
