@@ -1,4 +1,4 @@
-https://stanhub.com/sticky-header-change-navigation-active-class-on-page-scroll-with-jquery/
+// https://stanhub.com/sticky-header-change-navigation-active-class-on-page-scroll-with-jquery/
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
@@ -29,14 +29,11 @@ $(document).ready(function () {
             });
         }
     });
-    var str = $('#intro p').text();
-    //http://stackoverflow.com/questions/11761563/javascript-regexp-for-splitting-text-into-sentences-and-keeping-the-delimiter
-    var spans = '<span class="appearText">' + str.match( /[^¿]+/g ).join(' </span><span class="appearText">') + '</span>';
-    $(spans).hide().appendTo('.fadeInText').each(function(i) {
-        $(this).delay(2000 * i).fadeIn(1000);
-    });
-    $(".navItems").animate({opacity: 1}, 3000);
-    $(".fadeInButton").delay(2000).animate({opacity: 1}, 3000);   
+    $("#fadeFirst").animate({opacity: 1}, 2000);
+    $(".fadeInText").delay(1000).fadeIn(3000); 
+    $(".fadeInButton").delay(1000).animate({opacity: 1}, 3000);     
+    $("#fadeSecond").delay(1500).animate({opacity: 1}, 3000);
+    $("#fadeThird").delay(1500).animate({opacity: 1}, 3000);
 });
 
 function onScroll(event){
