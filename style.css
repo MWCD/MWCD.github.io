@@ -46,6 +46,14 @@ p, .contactInfo li{
   letter-spacing: 1.2px;
   color: #EEEEEE;
 }
+.fadeInText {
+  font-size: 1.6em;
+  line-height: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  color: #EEEEEE;
+}
 a {
 	text-decoration: none;
 	font-size: 1.2em;
@@ -100,7 +108,7 @@ margin-left: 20%;
 		height: 600px;
 	}
 		.spacing {
-			padding-top: 200px;
+			padding-top: 140px;
 		}
     .fadeInText{
       margin-bottom: 100px;
@@ -119,6 +127,7 @@ margin-left: 20%;
       height: 50px;
       width: 50px;
       fill: #EEEEEE;
+      padding-right: 70px;
       margin-top: 200px;
       display:block;
       margin:auto;
