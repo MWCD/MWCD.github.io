@@ -327,9 +327,6 @@ a {
 	}
 }
 @media only screen and (max-width: 650px) {
-	.spacing {
-		padding-top: 70px;
-	}
 	h1, h2, h3 {
 		margin-left: 6%;
 	}
@@ -344,7 +341,13 @@ a {
     margin-left: 6%;
     margin-bottom: 80px;
     padding-top: 30px;
+    font-size: 1.4em;
+    line-height: 40px;
+  	letter-spacing: 1.1px;
   }
+  .imgButton {
+	  padding-right: 0px;
+	}
   .portfolioImg {
   	padding: 10px 0 10px 0;
   }
