@@ -1,7 +1,14 @@
+html {
+	height: 100%;
+}
 body {
+	height: 100%;
 	background-color: #212020;
 	padding: 0;
 	margin: 0;
+}
+.container {
+	height: 100%;
 }
 ul,li { list-style-type: none;
         list-style-position:inside;
@@ -13,7 +20,7 @@ p {
 }
 div, p {
 	margin:0;
-  padding:0; 
+ 	padding:0; 
 }
 h1, h2, h3, .appearText {
 	margin: 0;
@@ -53,7 +60,7 @@ p, .contactInfo li{
   font-weight: 300;
   letter-spacing: 1.2px;
   color: #EEEEEE;
-  padding-top: 190px;
+  padding-top: 290px;
   margin-bottom: 150px;
   margin-right: 6%;
 }
@@ -74,7 +81,7 @@ a {
 }
 	nav {
 		list-style-type: none;
-		padding-top: 201px;
+		padding-top: 301px;
 	}
   #fadeFirst, #fadeSecond, #fadeThird {
     opacity: 0;
@@ -103,12 +110,13 @@ a {
 			font-size: 1.35em;
 		}
 	.content {
+		height: 100%;
 		width: 80%;
 		float: left;
 		margin-left: 20%;
 	}
 	#intro {
-		height: 600px;
+		height: 100%;
 	}
 		#intro p {
 			display: none;
@@ -133,7 +141,7 @@ a {
       color: #FFFFFF;
     }
   #portfolio {
-  	margin-top: 100px;
+  	margin-top: 10px;
   }
   #portfolio h1, #portfolio h3 {
   	margin-right: 6%;
@@ -213,9 +221,8 @@ a {
   	display: none;
   }
 	#contact {
-		margin-top: 100px;
-		height: 500px;
-		padding-bottom: 200px;
+		margin-top: 15%;
+		height: 90%;
 		margin-right: 6%;
 	}	
 	.contactContent {
@@ -262,7 +269,14 @@ a {
 	   margin-bottom: -13px;
 	   background-image: url(img/mail.svg);
 	}
-
+@media only screen and (max-width: 1280px) {
+	nav {
+		padding-top: 201px;
+	}
+	.fadeInText {
+		padding-top: 190px;
+	}
+}
 @media only screen and (max-width: 970px) {
 	a {
 		font-size: 1em;
